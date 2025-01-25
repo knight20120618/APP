@@ -1,0 +1,16 @@
+﻿<Window x:Class="Temperature.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Temperature"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="147.801" Width="247.549">
+    <Grid>
+        <TextBox x:Name="txtFahrenheit" HorizontalAlignment="Left" Height="23" Margin="82,18,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" KeyUp="txtFahrenheit_KeyUp"/>
+        <Label Content="華氏" HorizontalAlignment="Left" Margin="24,17,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtCelsius" HorizontalAlignment="Left" Height="23" Margin="82,60,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" KeyUp="txtCelsius_KeyUp"/>
+        <Label Content="攝氏" HorizontalAlignment="Left" Margin="24,58,0,0" VerticalAlignment="Top"/>
+
+    </Grid>
+</Window>

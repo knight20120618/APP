@@ -1,0 +1,21 @@
+﻿<Window x:Class="NotePad.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:NotePad"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Button x:Name="btnOpen" Content="檔案開啟" HorizontalAlignment="Left" Margin="160,62,0,0" VerticalAlignment="Top" Width="75" Click="btnOpen_Click"/>
+        <Button x:Name="btnSave" Content="檔案存檔" HorizontalAlignment="Left" Margin="240,62,0,0" VerticalAlignment="Top" Width="75" Click="btnSave_Click"/>
+        <RichTextBox x:Name="rtbText" HorizontalAlignment="Left" Height="239" Margin="160,101,0,0" VerticalAlignment="Top" Width="480">
+            <FlowDocument>
+                <Paragraph>
+                    <Run Text="RichTextBox"/>
+                </Paragraph>
+            </FlowDocument>
+        </RichTextBox>
+
+    </Grid>
+</Window>

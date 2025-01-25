@@ -1,0 +1,17 @@
+﻿<Window x:Class="MediaPlayer.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MediaPlayer"
+        mc:Ignorable="d"
+        Title="MP3程式" Height="117.888" Width="706.379" Background="{x:Null}">
+    <Grid Background="#FFE9BFBF">
+        <Button x:Name="btnPlay" Content="播放" HorizontalAlignment="Left" Margin="15,47,0,0" VerticalAlignment="Top" Width="103" Height="30" Background="#FF6AC928" Click="btnPlay_Click"/>
+        <Button x:Name="btnPause" Content="暫停 " HorizontalAlignment="Left" Margin="139,47,0,0" VerticalAlignment="Top" Width="103" Height="30" Background="#FF28A4C9" Click="btnPause_Click"/>
+        <Button x:Name="btnStop" Content="停止" HorizontalAlignment="Left" Margin="266,47,0,0" VerticalAlignment="Top" Width="103" Height="30" Background="#FFC92828" BorderBrush="#FF707070" Foreground="#FF56E6C5" Click="btnStop_Click"/>
+        <TextBox x:Name="txtFilePath" HorizontalAlignment="Left" Height="23" Margin="11,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="506"/>
+        <Button x:Name="btnOpenFile" Content="開啟檔案" HorizontalAlignment="Left" Margin="522,10,0,0" VerticalAlignment="Top" Width="148" Height="23" Background="#FFDFF7CF" Click="btnOpenFile_Click"/>
+        <MediaElement x:Name="MedShow" HorizontalAlignment="Left" Height="30" Margin="383,47,0,0" VerticalAlignment="Top" Width="57"/>
+    </Grid>
+</Window>

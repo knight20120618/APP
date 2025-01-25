@@ -1,0 +1,32 @@
+﻿<Window x:Class="Calculator.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Calculator"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <TextBox x:Name="txtNumber" HorizontalAlignment="Center" Margin="0,46,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="480" Height="38" HorizontalContentAlignment="Right" VerticalContentAlignment="Center" FontSize="22" Text="0"/>
+        <Button x:Name="btnClear" Content="AC" HorizontalAlignment="Left" Margin="117,123,0,0" VerticalAlignment="Top" Height="45" Width="53" FontSize="22" Click="btnClear_Click"/>
+        <Button x:Name="btnSeven" Content="7" HorizontalAlignment="Left" Margin="225,123,0,0" VerticalAlignment="Top" Height="45" Width="53" FontSize="22" Click="btnSeven_Click"/>
+        <Button x:Name="btnFour" Content="4" HorizontalAlignment="Left" Margin="225,196,0,0" VerticalAlignment="Top" Height="45" Width="53" FontSize="22" Click="btnFour_Click"/>
+        <Button x:Name="btnOne" Content="1" HorizontalAlignment="Left" Margin="225,265,0,0" VerticalAlignment="Top" Height="45" Width="53" FontSize="22" Click="btnOne_Click"/>
+        <Button x:Name="btnDot" Content="." HorizontalAlignment="Left" Margin="225,339,0,0" VerticalAlignment="Top" Height="45" Width="53" FontSize="22" Click="btnDot_Click"/>
+        <Button x:Name="btnEight" Content="8" HorizontalAlignment="Left" Margin="355,123,0,0" VerticalAlignment="Top" Height="45" Width="53" FontSize="22" Click="btnEight_Click"/>
+        <Button x:Name="btnFive" Content="5" HorizontalAlignment="Left" Margin="355,196,0,0" VerticalAlignment="Top" Height="45" Width="53" FontSize="22" Click="btnFive_Click"/>
+        <Button x:Name="btnTwo" Content="2" HorizontalAlignment="Left" Margin="355,265,0,0" VerticalAlignment="Top" Height="45" Width="53" FontSize="22" Click="btnTwo_Click"/>
+        <Button x:Name="btnZero" Content="0" HorizontalAlignment="Left" Margin="355,339,0,0" VerticalAlignment="Top" Height="45" Width="53" FontSize="22" Click="btnZero_Click"/>
+        <Button x:Name="btnNine" Content="9" HorizontalAlignment="Left" Margin="480,123,0,0" VerticalAlignment="Top" Height="45" Width="53" FontSize="22" Click="btnNine_Click"/>
+        <Button x:Name="btnSix" Content="6" HorizontalAlignment="Left" Margin="480,196,0,0" VerticalAlignment="Top" Height="45" Width="53" FontSize="22" Click="btnSix_Click"/>
+        <Button x:Name="btnThree" Content="3" HorizontalAlignment="Left" Margin="480,265,0,0" VerticalAlignment="Top" Height="45" Width="53" FontSize="22" Click="btnThree_Click"/>
+        <Button x:Name="btnEqual" Content="=" HorizontalAlignment="Left" Margin="480,339,0,0" VerticalAlignment="Top" Height="45" Width="53" FontSize="22" Click="btnEqual_Click"/>
+        <Button x:Name="btnDivide" Content="/" HorizontalAlignment="Left" Margin="619,123,0,0" VerticalAlignment="Top" Height="45" Width="53" FontSize="22" Click="btnDivide_Click"/>
+        <Button x:Name="btnPlus" Content="*" HorizontalAlignment="Left" Margin="619,196,0,0" VerticalAlignment="Top" Height="45" Width="53" FontSize="22" Click="btnPlus_Click"/>
+        <Button x:Name="btnMinus" Content="-" HorizontalAlignment="Left" Margin="619,265,0,0" VerticalAlignment="Top" Height="45" Width="53" FontSize="22" Click="btnMinus_Click"/>
+        <Button x:Name="btnAdd" Content="+" HorizontalAlignment="Left" Margin="619,339,0,0" VerticalAlignment="Top" Height="45" Width="53" FontSize="22" Click="btnAdd_Click"/>
+        <Button x:Name="btnPercentage" Content="%" HorizontalAlignment="Left" Margin="117,339,0,0" VerticalAlignment="Top" Height="45" Width="53" FontSize="22" Click="btnPercentage_Click"/>
+        <Button x:Name="btnRewind" Content="&lt;&lt;" HorizontalAlignment="Left" Margin="117,196,0,0" VerticalAlignment="Top" RenderTransformOrigin="-3.764,1.284" FontSize="22" Width="53" Height="45" Click="btnRewind_Click"/>
+
+    </Grid>
+</Window>

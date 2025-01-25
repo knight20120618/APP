@@ -1,0 +1,26 @@
+﻿<Window x:Class="TextEditor.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TextEditor"
+        mc:Ignorable="d"
+        Title="精簡版_Word" Height="450" Width="800">
+    <Grid Background="#FFB695CD">
+        <Button x:Name="btnOpen" Content="開啟檔案" HorizontalAlignment="Left" Margin="78,61,0,0" VerticalAlignment="Top" Width="75" Click="btnOpen_Click"/>
+        <ComboBox x:Name="cmbFontFamily" HorizontalAlignment="Left" Margin="238,59,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="cmbFontFamily_SelectionChanged"/>
+        <Button x:Name="btnSave" Content="儲存檔案" HorizontalAlignment="Left" Margin="158,61,0,0" VerticalAlignment="Top" Width="75" Click="btnSave_Click"/>
+        <ComboBox x:Name="cmbFontSize" HorizontalAlignment="Left" Margin="363,59,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="cmbFontSize_SelectionChanged"/>
+        <Button x:Name="btnBold" Content="B" HorizontalAlignment="Left" Margin="488,61,0,0" VerticalAlignment="Top" Width="75" FontWeight="Bold" Click="btnBold_Click"/>
+        <Button x:Name="btnItalic" Content="I" HorizontalAlignment="Left" Margin="568,61,0,0" VerticalAlignment="Top" Width="75" FontStyle="Italic" FontWeight="Bold" Click="btnItalic_Click"/>
+        <Button x:Name="btnUnderline" Content="U" HorizontalAlignment="Left" Margin="648,61,0,0" VerticalAlignment="Top" Width="75" FontWeight="Bold" Click="btnUnderline_Click"/>
+        <RichTextBox x:Name="rtbText" HorizontalAlignment="Left" Height="276" Margin="78,101,0,0" VerticalAlignment="Top" Width="645" SelectionChanged="rtbText_SelectionChanged" LostFocus="rtbText_LostFocus">
+            <FlowDocument>
+                <Paragraph>
+                    <Run Text="RichTextBox"/>
+                </Paragraph>
+            </FlowDocument>
+        </RichTextBox>
+
+    </Grid>
+</Window>
